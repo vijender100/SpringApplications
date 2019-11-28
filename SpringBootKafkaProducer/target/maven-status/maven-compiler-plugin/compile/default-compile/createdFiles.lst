@@ -1,0 +1,3 @@
+com\app\kafka\KafkaProducerMain.class
+com\app\kafka\producer\controller\KafkaProducerService.class
+com\app\kafka\producer\controller\KafkaProducerController.class
