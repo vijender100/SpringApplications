@@ -5,3 +5,8 @@ spring:
 app:
   topic:
     example: testtopic
+    
+    
+logging:
+  file:
+    name: springkafkaconsumer
