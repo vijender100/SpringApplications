@@ -14,7 +14,7 @@ public class KafkaProducerService {
 
 	private static final String TOPIC = "testtopic";
 	@Autowired
-	private KafkaTemplate<String, Employee> kafkaTemplate;
+	private KafkaTemplate<String, Object> kafkaTemplate;
 
 	public void sendMessage(Employee employee) {
 		Message<Employee> message = MessageBuilder.withPayload(employee).setHeader(KafkaHeaders.TOPIC, TOPIC).build();
