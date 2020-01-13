@@ -12,11 +12,11 @@
 			<strong>Employees Login</strong>
 		</h1>
 		<c:url value="/login" var="login" />
-		<form:form action="" method="post">
+		<form:form action="/login" method="post">
 			<label>Username:</label>
-			<input type="text" name="username" />
+			<input type="text" name="username" /><br><br>
 			<label>Password:</label>
-			<input type="password" name="password" />
+			<input type="password" name="password" /><br><br>
 			<input type="submit" />
 		</form:form>
 	</div>
