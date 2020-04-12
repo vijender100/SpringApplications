@@ -6,6 +6,15 @@ public class Employee {
 	private String empId;
 	private String empName;
 	private String empSalary;
+	private Company company;
+
+	public Company getCompany() {
+		return company;
+	}
+
+	public void setCompany(Company company) {
+		this.company = company;
+	}
 
 	public String getEmpId() {
 		return empId;

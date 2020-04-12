@@ -15,8 +15,6 @@ import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.core.ProducerFactory;
 import org.springframework.kafka.support.serializer.JsonSerializer;
 
-import com.app.kafka.producer.model.Employee;
-
 @Configuration
 @EnableKafka
 public class ProducerConfiguration {
@@ -34,12 +32,12 @@ public class ProducerConfiguration {
 	}
 
 	@Bean
-	public ProducerFactory<String, Employee> producerFactory() {
+	public ProducerFactory<String, Object> producerFactory() {
 		return new DefaultKafkaProducerFactory<>(producerConfigs());
 	}
 
 	@Bean
-	public KafkaTemplate<String, Employee> kafkaTemplate() {
+	public KafkaTemplate<String, Object> kafkaTemplate() {
 		return new KafkaTemplate<>(producerFactory());
 	}
 }
